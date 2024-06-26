@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size: 12px;
+}
+h1{
+    padding-left: 600px;
+    font-weight: 500px;
+    font-size: 3em;
+    text-align: center;
+}
+.logo img{
+    width:100px;
+    height: 100px;
+    
+}
+header{
+    background-image: url('images/brighter.PNG');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+.column{
+    display: inline;
+    width: 0%;
+    padding: 5px;
+}
+.row{
+    display: flex;
+    padding: 5px;
+}
+.navbar{
+    background-color: rgb(42, 39, 39);
+    overflow: hidden;
+}
+
+.navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li {
+   float: right;
+   margin: 10px;
+   font-size: 15px;
+   justify-content: space-between;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    padding-right: 30px;
+    font-size: 15px;
+
+}
+ul li a:hover{
+    background-color: gainsboro;
+    color: black;
+}
+.navbar a.active {
+    background-color: rgb(1, 40, 41);
+    color: white;
+}
+h2{
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 60px;
+    padding-left: 80px;
+    text-decoration: underline;
+}
+p{
+    display: flex;
+    max-inline-size: 250px;
+    padding-left: 100px;
+    padding-top: 15px;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+body{
+    background-image: url("images/intern\ pic.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top 300px right 250px;
+    
+    
+    
+    
+
+}
