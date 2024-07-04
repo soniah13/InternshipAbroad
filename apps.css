@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    background-color: burlywood;
+}
+.banner-container{
+    background-image: url(images/moe.PNG);
+    background-repeat: no-repeat;
+    width:100%;
+    height: 30vh;
+    object-fit: contain; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-weight: 800;
+}
+.banner-title{
+    flex: 1;
+    height: 50px;
+}
+.navbar-content{
+    flex: 5;
+    cursor: pointer;
+}
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu-item{
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.fa-solid{
+    position: relative;
+    display: flex;
+    padding-top: 12px;
+    right: 5px;
+    transition: 3s;
+}
+.menu-item a{
+    margin-right: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;    
+}
+.menu-item a:hover{
+    background-color: rgb(152, 205, 233);
+}
+.sign-content{
+    flex: 2;
+    position: relative;
+    justify-content: right;
+}
+.open-button{
+    width: 80px;
+    height: 40px;
+    border-radius: 12px;
+    justify-content: flex-end;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: lato;
+    background-color: rgb(152, 205, 233);
+    cursor: pointer;
+}
+.open-button:hover{
+    background-color: gray;
+}
+
+.pop-form {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+    width: 90%;
+    max-width: 300px;
+    height: 450px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e7dfdf;
+    padding: 50px 80px 50px;
+    justify-content: center;
+    
+}
+#close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    size: 80px;
+}
+.form-content h1{
+    position: relative;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: lato;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(126, 5, 5);
+}
+.form-content p{
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.input-field{
+    background-color:rgb(193, 165, 165) ;
+    margin: 15px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 1s;
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 10px;
+}
+.input-field i{
+    margin-left:15px;
+    margin-bottom: 10px;
+}
+p a{
+    font-size: 15px;
+    line-height: 1.2em;
+    color: rgb(122, 36, 36);
+    text-decoration: none;
+}
+p a:hover{
+    text-decoration: underline;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-field button{
+    background-color: rgb(126, 5, 5);
+    height: 30px;
+    width: 70px;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    outline: 0;
+    cursor: pointer;
+}
+input[type=text],
+input[type=password],
+input[type=email] {
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+}
+.btn-field button.disable{
+    background-color: rgb(126, 122, 122);
+    color: whitesmoke;
+}
+.advt-content{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.advt-text{
+    font-family: "Bona Nova SC", serif;
+    font-size: 5em;
+    font-weight: 700px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 380px;
+}
+#direct{
+    margin-top: 50px;
+}
+#direct a{
+    text-align: center;
+    font-size: 0.5em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(7, 7, 7);
+}
+#direct a:hover{
+    border: 1px solid rgb(75, 5, 140);
+}
+#About-us{
+    position: relative;
+}
+.know-more{
+    width: 100%;
+    height: 400vh;
+    display: block;
+    position: absolute;
+
+}
+h2{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+    transition: 2s;
+    color: blue;
+}
+h2:hover{
+    text-decoration: line-through;
+}
+.about {
+    max-width: 50%;
+    margin: 30px 0 0 350px;
+    text-align: center;
+    justify-content: center;
+    line-height: 1.2em;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+}
+span {
+    color: rgb(60, 5, 116);
+    padding-top: 20px;
+}
+.us{
+    margin: 40px 0 0 ;
+    height: 100vh;
+    width: 100%;
+    opacity: 40%;
+    background-image: url("images/city.png");
+}
+h3{
+    padding: 80px;
+    color: rgb(239, 219, 188);
+    font-size: 3em;
+    font-family: "Bona Nova SC", serif;
+    text-align: center;
+    font-weight: 800;
+}
+.more{
+    padding: 100px 0 ;
+    text-align: center;
+    display: block;
+    font-size: 2em;
+    color: rgb(11, 11, 11);
+    font-weight: 700;
+    position: fixed;
+    object-fit: cover;
+}
+#go{
+    padding: 60px;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 700;
+
+}
+.choose{
+    display: flex;
+    margin: 50px;
+}
+#can{
+    margin: 80px;
+    font-size: 25px;
+    font-family: lato;
+}
+.redirect{
+    font-size: 25px;
+    font-family: lato;
+}
+.prog{
+    display: flex;
+    list-style: none
+}
+.prog-menu{
+    margin: 0 0 0 50px;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+.prog-menu a{
+    margin-right: 30px;
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif; 
+    font-weight: 700;
+    box-sizing: border-box;
+    border: 0.5px solid transparent;
+    border-radius: 20px;
+    line-height: 2em;
+    outline: transparent;
+    background-color: rgb(205, 205, 242);
+}
+.prog-menu a:hover{
+    background-color: rgb(145, 104, 50);
+}
+.prog{
+    margin-left: 350px;
+}
+.prog-ttl{
+    color: black;
+}
+.column{
+    box-sizing: border-box;
+    margin: 15px 0 40px o;
+    padding: 0 10px;
+    display:flex;
+    margin-left: 50px;
+
+}
+.card{
+    box-shadow: 0 4px 10px 0 black;
+    display: inline;
+}
+.pic-container{
+    padding: 0 20px;
+    width: 100px;
+    max-height: 40vh;
+}
+
+h4{
+    text-align: right;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+

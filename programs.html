@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sections.css">
+</head>
+<body>
+    <div class="banner-container">
+       
+    <div class="navbar-content">
+        <nav>
+            <ul class="menu">
+                <li class="menu-item"><a href="/index.html">HOME</a></li>
+                <li class="menu-item"><a href="/programs.html">Programs</a></li>
+                </ul>
+        </nav>
+    </div>
+    </div>
+    <header>
+        <h1>Find your Program</h1>
+    </header>
+    <div class="search-container">
+        <p>Get what's for you <br> We Care</p>
+        <div class="search">
+            <input type="text" id="courseInput" placeholder="Enter Course...">
+            <input type="text" id="countryInput" placeholder="Enter Country...">
+            <input type="month" id="mounthInput" >
+            <button onclick="filterPrograms()">Search</button>
+            <div id="programList">
+                <h2>your program:</h2>
+            </div>
+        </div>
+         </div>
+
+         <div class="fields-container">
+            <div class="fields-menu">
+                <nav class="field-list">
+                    <ul>
+                    <li class="field-item"><a href="#">All fields</a></li>
+                    <li class="field-item"><a href="#business-cont">Business</a></li>
+                    <li class="field-item"><a href="#">Arts & Media</a></li>
+                    <li class="field-item"><a href="#">Stem</a></li>
+                    <li class="field-item"><a href="#">Animal Science</a></li>
+                    <li class="field-item"><a href="#">Environmental Science</a></li>
+                    <li class="field-item"><a href="#">Health Science</a></li>
+                    <li class="field-item"><a href="#">Social Science</a></li>
+                    </ul>
+                </nav>
+            </div>
+         </div>
+
+         <section id="business-cont">
+            <h3>Business</h3>
+            <div class="buss-cont">
+            <div class="field-card">
+                <div class="img-card">
+                    <img src="images/finance.png">
+                    <p class="card-p">Finance</p>
+                </div>
+            </div>
+
+            <div class="field-card">
+                <div class="img-card">
+                    <img src="images/startup.png">
+                    <p class="card-p">Business & Start Ups</p>
+                </div>
+            </div>
+
+            <div class="field-card">
+                <div class="img-card">
+                    <img src="images/events.png">
+                    <p class="card-p">Event Management</p>
+                </div>
+            </div>
+
+            <div class="field-card">
+                <div class="img-card">
+                    <img src="images/finance.png">
+                    <p class="card-p">Finance</p>
+                </div>
+            </div>
+
+            <div class="field-card">
+                <div class="img-card">
+                    <img src="images/realest.png">
+                    <p class="card-p">Real Estate</p>
+                </div>
+            </div>
+
+            <div class="field-card">
+                <div class="img-card">
+                    <img src="images/tourism.png">
+                    <p class="card-p">Tourism</p>
+                </div>
+            </div>
+
+            <div class="field-card">
+                <div class="img-card">
+                    <img src="images/sales.png">
+                    <p class="card-p">Sales</p>
+                </div>
+            </div>
+            </div>
+         </section>
+        
+    <script src="app.js"></script>
+</body>
+</html>
